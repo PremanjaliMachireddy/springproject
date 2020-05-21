@@ -108,7 +108,6 @@ public class EmployeeResource {
 			username = loginform.getUsername();
 			password = loginform.getPassword();
 			count = employeeService.getCount(username, password);
-            System.out.println("count===============    "+count);
 			if (count == 1) {
 				logger.info("credentials matched");
 				number = 1;
